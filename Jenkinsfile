@@ -10,7 +10,7 @@ pipeline {
         stage('Get code') {
             steps {
                 // Limpiar el WORKSPACE antes
-                CleanWs()
+                cleanWs()
                 // Traer el codigo del repo
                 git 'https://github.com/franlov/helloworld.git'
             }
